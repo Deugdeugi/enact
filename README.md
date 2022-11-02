@@ -1,3 +1,8 @@
+## Reference Site
+1) Enact Doc : https://enactjs.com
+2) Moonstone Sampler : https://enactjs.com/sampler/moonstone/
+3) Sandstone Sampler : https://enactjs.com/sampler/sandstone/
+
 This project was bootstrapped with [@enact/cli](https://github.com/enactjs/cli).
 
 Below you will find some information on how to perform common tasks.
