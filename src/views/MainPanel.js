@@ -1,19 +1,28 @@
-import Button from '@enact/sandstone/Button';
-import {Panel, Header} from '@enact/sandstone/Panels';
-import { useCallback } from 'react';
+import {Panels, Panel, Header} from '@enact/sandstone/Panels';
+import Item from '@enact/sandstone/Item';
 
 const MainPanel = (...props) => {
-	console.log("main props", props);
-
-	const testClick = useCallback(() => {
-		console.log("Click!");
-	}, []);
-
 	return (
-		<Panel {...props}>
-			<Header title="Hello world!" />
-			<Button onClick={testClick}>Click me</Button>
-		</Panel>
+		<Panels index={0}>
+			<Panel>
+				<Header 
+					title="Deugdeugi Enact"
+					subtitle="Deugdeugi Enact Subtitle"
+				/>
+				<Item>Enact Framework</Item>
+			</Panel>
+			<Panel>
+				<Header 
+					title="Enact Framework"
+					subtitle="Deugdeugi Enact Subtitle"
+				/>
+				<Item>ActionGuide</Item>
+			</Panel>
+			<Panel
+				title="Deugdeugi 2"
+			>
+			</Panel>
+		</Panels>
 	)
 };
 
